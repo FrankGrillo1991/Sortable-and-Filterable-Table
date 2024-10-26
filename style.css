@@ -34,3 +34,12 @@ body {
 .form>div {
     width: 100%;
 }
+
+.form>button {
+    background-color: rgb(46, 171, 46);
+    padding: 1%;
+    border-radius: 5px;
+    width: 10%;
+    color: black;
+    border: 1px solid #ddd;
+}
