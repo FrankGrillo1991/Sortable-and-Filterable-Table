@@ -68,3 +68,7 @@ body {
 #table tr {
     border-bottom: 1px solid #ddd;
 }
+
+#table tr.titles {
+    background-color: lightgreen;
+}
