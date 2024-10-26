@@ -121,3 +121,43 @@ function sortYear() {
     flag.Year = !flag.Year;
 }
 
+// To search and filter items 
+function searchItems() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let filterItems = data.filter((e) => {
+        return (
+            e.Name.toLowerCase().includes(input) ||
+            e.Cat.toLowerCase().includes(input) ||
+            e.Year.includes(input)
+        );
+    });
+
+    remove();
+    filterItems.map((e, i) => addItem(e, i));
+}
+
+// Initiate edit form 
+function edit(c, i) {
+    console.log(c.classList.value)
+    if (c.classList.value === "zoom") {
+        c.classList.add("open");
+        el = data[i];
+        switchEdit();
+
+        let nameInput = document.getElementById("nameInput");
+        let catInput = document.getElementById("catInput");
+        let yearInput = document.getElementById("yearInput");
+        nameInput.value = el.Name;
+        catInput.value = el.Cat;
+        yearInput.value = el.Year;
+        index = 1;
+    } else {
+        c.classList.value = "zoom";
+        switchAdd();
+
+        document.getElementById("nameInput").value = "";
+        document.getElementById("catInput").value = "";
+        document.getElementById("yearInput").value = "";
+        index = -1;
+    }
+}
