@@ -94,3 +94,30 @@ function sortName() {
     if (flag.Name) data.reverse();
     flag.Name = !flag.Name;
 }
+
+// Sort with categories
+function sortCat() {
+    data.sort((a, b) => {
+        let fa = a.Cat.toLowerCase();
+            fb = b.Cat.toLowerCase();
+        console.log(fa, fb);
+
+        if (fa < fb) {
+            return -1;
+        }
+        if (fa > fb) {
+            return 1;
+        }
+        return 0;
+    });
+    if (flag.Cat) data.reverse();
+    flag.Cat = !flag.Cat;
+}
+
+// Sort with year
+function sortYear() {
+    data.sort((a, b) => a.Year - b.Year);
+    if (flag.Year) data.reverse();
+    flag.Year = !flag.Year;
+}
+
