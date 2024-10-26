@@ -72,3 +72,12 @@ body {
 #table tr.titles {
     background-color: lightgreen;
 }
+
+.zoom {
+    text-align: center;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+    color: rgb(255, 0, 0);
+}
