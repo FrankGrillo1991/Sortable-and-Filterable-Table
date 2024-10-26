@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="root">
+        <h1>Custom Table</h1>
+        <div>
+            <h2 id="formTitle">Add Item</h2>
+        </div>
+        <input type="text"
+                id="nameInput"
+                placeholder="Enter Name"
+                title="Type in a name"
+                value="" />
+        <input type="text"
+                id="catInput"
+                value=""
+                placeholder="Enter Category"
+                title="Type in a name" />
+        <input type="Number"
+                id="yearInput"
+                value=""
+                placeholder="Enter year"
+                title="Type in a name" />
+        <button id="submitItem"
+                type="button"
+                onclick="submitItem()">
+                Add Item
+        </button>
+        <button id="editItem"
+                style="display: none"
+                onclick="editItem()">
+                Update
+        </button>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
