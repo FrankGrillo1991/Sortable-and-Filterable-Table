@@ -30,3 +30,7 @@ body {
     width: 98%;
     background-color: rgb(247, 246, 246);
 }
+
+.form>div {
+    width: 100%;
+}
