@@ -1,0 +1,1 @@
+Sortable and Filterable Table developed with HTML, CSS & JavaScript
